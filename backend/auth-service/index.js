@@ -1,8 +1,5 @@
 
 
-//mongodb+srv://pavanpnaik321:<password>@cluster0.v1mx7az.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-// mongodb+srv://pavanpnaik321:<password>@cluster0.v1mx7az.mongodb.net/
-
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 7070;
@@ -11,7 +8,7 @@ const User = require('./User')
 const jwt = require('jsonwebtoken')
 
 
-const uri = 'mongodb+srv://pavanpnaik321:Pavan21p@cluster0.v1mx7az.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const uri = <your key>;
 app.use(express.json());
 
 const connectToDB = async () => {
